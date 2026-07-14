@@ -146,7 +146,7 @@ Save the file.
 - ✅ ELF
 - ✅ PRX
 
-## Current ISO AND CHD Status
+## Current status of unsupported formats
 
 ⚠️ **ISO, CHD, and CSO formats are currently NOT working.**
 
