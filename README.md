@@ -141,8 +141,6 @@ Save the file.
 # Supported Formats
 
 - ✅ PBP
-- ✅ CHD
-- ✅ CSO
 - ✅ ELF
 - ✅ PRX
 
