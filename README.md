@@ -10,6 +10,15 @@
 
 ## Step 1 – Install the Emulator
 
+Back up the following files:
+
+|       Files        |  
+|--------------------|
+| `libemu_ppsp.so`   |
+| `rkgame`           |
+| `UI_Res.cpd`       |
+| `resource.cpd`     |
+
 Download the following files from the **Releases** page:
 
 - `libemu_ppsp.so`
