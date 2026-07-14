@@ -146,11 +146,12 @@ Save the file.
 - ✅ ELF
 - ✅ PRX
 
-## Current ISO Status
+## Current ISO AND CHD Status
 
 ⚠️ **ISO files are currently NOT working.**
+⚠️ **CHD files are currently NOT working.**
 
-Attempting to launch an ISO will result in:
+Attempting to launch an ISO or CHD will result in:
 
 - Black screen
 - Emulator crash
