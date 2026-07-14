@@ -13,7 +13,7 @@
 Back up the following files:
 
 | Files|Where is it
-|----------|-----|--|
+|----------------------------|
 | `rkgame`        | `cubegm\` |
 | `UI_Res.cpd`    | `cubegm\` |
 | `resource.cpd`  |  `cubegm\`|
