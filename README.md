@@ -1,13 +1,183 @@
-Porting PPSSPP to the Data Frog SF3000 is difficult, but possible—though don't expect high frame rates.
+# PPSSPP Port for Data Frog SF3000
 
---INFORMATION--
+> ⚠️ **Experimental Project**
+>
+> This port of **PPSSPP** for the **Data Frog SF3000** is intended **only for experimental purposes**. Development will continue gradually. Expect bugs, crashes, and very low performance.
 
-I’ve been working on porting PPSSPP to the SF3000 for three days now. I’m using the SF3000 toolchain (https://github.com/700zx1/sf3000toolchain). Once it’s ready, I’ll announce it on the RetroHandHelds.gg Discord server.
+---
 
-What are my future plans for the project?
-The initial versions of PPSSPP for the SF3000 will be poorly optimized; even simple 2D games will lag. If I manage to successfully build the project, I’ll work on optimizing the PPSSPP code and releasing new versions (v0.1, v0.2, etc.).
-For now, though, don't expect good frame rates.
+# Installation Guide
 
---CHANGES--
+## Step 1 – Install the Emulator
 
-I’ve already compiled about 15–25%, though for now, it’s just one error after another. Also, take a look at the `HowtolaunchPSPgames.HOW` file; it explains exactly how to launch PSP games (this will come in handy once I get a working emulator ready).
+Download the following files from the **Releases** page:
+
+- `libemu_ppsp.so`
+- `rkgame`
+- `UI_Res.cpd`
+- `resource.cpd`
+
+Copy the files to your SD card:
+
+| File | Destination |
+|------|-------------|
+| `libemu_ppsp.so` | `cubegm/cores/` |
+| `rkgame` | `cubegm/` |
+| `UI_Res.cpd` | `cubegm/` |
+| `resource.cpd` | `cubegm/` |
+
+If Windows asks whether to replace existing files, choose **Replace**.
+
+---
+
+## Step 2 – Add PSP Games
+
+Create a new folder in the root of your SD card:
+
+```
+PSP/
+```
+
+Inside it, create the following:
+
+```
+PSP/
+├── filelist.csv
+└── images/
+```
+
+### Game Structure
+
+For each game, create its own folder.
+
+Example:
+
+```
+PSP/
+├── cavestory/
+│   └── EBOOT.PBP
+├── images/
+│   └── cavestory.png
+└── filelist.csv
+```
+
+### Image Requirements
+
+- Format: PNG
+- Resolution: **320×240**
+
+Place all images inside:
+
+```
+PSP/images/
+```
+
+### Editing `filelist.csv`
+
+Open `filelist.csv` with Notepad or Excel.
+
+Each game must follow this format:
+
+```csv
+FolderName\EBOOT.PBP,ImageName
+```
+
+Example:
+
+```csv
+cavestory\EBOOT.PBP,cavestory
+```
+
+---
+
+## Step 3 – Configure CubeGM
+
+Open:
+
+```
+cubegm/cores/Config.xml
+```
+
+Scroll to the bottom of the file and add:
+
+```xml
+<core>
+    <emucore name="ppsspp-libretro" file="libemu_ppsp.so" />
+    <supported_extensions>ISO</supported_extensions>
+    <supported_extensions>PBP</supported_extensions>
+    <supported_extensions>CHD</supported_extensions>
+    <supported_extensions>CSO</supported_extensions>
+    <supported_extensions>ELF</supported_extensions>
+    <supported_extensions>PRX</supported_extensions>
+</core>
+```
+
+Save the file.
+
+---
+
+Next, open:
+
+```
+cubegm/cores/filelist.xml
+```
+
+Add:
+
+```xml
+<file name="PSP/" core="libemu_ppsp.so" />
+```
+
+Save the file.
+
+---
+
+# Supported Formats
+
+- ✅ PBP
+- ✅ CHD
+- ✅ CSO
+- ✅ ELF
+- ✅ PRX
+
+## Current ISO Status
+
+⚠️ **ISO files are currently NOT working.**
+
+Attempting to launch an ISO will result in:
+
+- Black screen
+- Emulator crash
+
+---
+
+# Performance
+
+This project is still in a very early stage.
+
+Current performance:
+
+- **2–5 FPS**
+- Frequent crashes
+- Many games are not playable yet
+
+Future updates will focus on improving compatibility and stability.
+
+---
+
+# Disclaimer
+
+This project is an unofficial experimental port of PPSSPP for the Data Frog SF3000.
+
+It is provided **as-is**, without any guarantees of stability or compatibility.
+
+Please report bugs and share test results through GitHub Issues.
+
+---
+
+# Credits
+
+- PPSSPP Team
+- Libretro
+- Data Frog SF3000 community
+- Everyone testing the project ❤️
