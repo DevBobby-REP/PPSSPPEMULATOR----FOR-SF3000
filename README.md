@@ -188,4 +188,5 @@ Please report bugs and share test results through GitHub Issues.
 - PPSSPP Team
 - Libretro
 - Data Frog SF3000 community
-- Everyone testing the project ❤️
+- Everyone testing the project
+- Also, a huge thank you to everyone who helped me with emulator errors on the RetroHandHelds.gg Discord server!
