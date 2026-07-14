@@ -148,11 +148,9 @@ Save the file.
 
 ## Current ISO AND CHD Status
 
-⚠️ **ISO files are currently NOT working.**
+⚠️ **ISO, CHD, and CSO formats are currently NOT working.**
 
-⚠️ **CHD files are currently NOT working.**
-
-Attempting to launch an ISO or CHD will result in:
+Attempting to launch an ISO, CHD, or CSO file will result in the following:
 
 - Black screen
 - Emulator crash
