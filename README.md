@@ -14,7 +14,6 @@ Back up the following files:
 
 |       Files        |  
 |--------------------|
-| `libemu_ppsp.so`   |
 | `rkgame`           |
 | `UI_Res.cpd`       |
 | `resource.cpd`     |
