@@ -10,6 +10,8 @@
 
 ## Step 1 – Install the Emulator
 
+**ATTENTION! THIS REPLACES THE ATARI SECTION ON PSP.**
+
 Back up the following files:
 
 | File | Where is it  |
