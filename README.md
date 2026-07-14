@@ -18,14 +18,9 @@ Back up the following files:
 | `UI_Res.cpd` | `cubegm/` |
 | `resource.cpd` | `cubegm/` |
 
-Download the following files from the **Releases** page:
+Download the zip archive from the **Release** page.
 
-- `libemu_ppsp.so`
-- `rkgame`
-- `UI_Res.cpd`
-- `resource.cpd`
-
-Copy the files to your SD card:
+Extract the following files from the archive:
 
 | File | Destination |
 |------|-------------|
@@ -33,6 +28,7 @@ Copy the files to your SD card:
 | `rkgame` | `cubegm/` |
 | `UI_Res.cpd` | `cubegm/` |
 | `resource.cpd` | `cubegm/` |
+| `flash0` | `cubegm/` |
 
 If Windows asks whether to replace existing files, choose **Replace**.
 
