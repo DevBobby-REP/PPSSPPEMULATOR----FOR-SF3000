@@ -12,11 +12,11 @@
 
 Back up the following files:
 
-|       Files        |  
-|--------------------|
-| `rkgame`           |
-| `UI_Res.cpd`       |
-| `resource.cpd`     |
+| Files|Where is it
+|------|-----------|
+| `rkgame` `cubegm\` |
+| `UI_Res.cpd` `cubegm\` |
+| `resource.cpd` `cubegm\`|
 
 Download the following files from the **Releases** page:
 
