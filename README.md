@@ -156,7 +156,6 @@ This project is still in a very early stage.
 Current performance:
 
 - **13–16 FPS**
-- Frequent crashes
 - Many games are not playable yet
 
 Future updates will focus on improving compatibility and stability.
